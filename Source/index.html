@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Entre Nubes | Cobijas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BARRA SUPERIOR
+    ========================== -->
+
+    <div class="top-bar">
+        Envíos a todo Colombia 🚚
+    </div>
+
+
+    <!-- =========================
+         ENCABEZADO
+    ========================== -->
+
+    <header>
+
+        <div class="logo">
+            ☁️ Entre Nubes
+        </div>
+
+
+        <nav>
+
+            <a href="#inicio">Inicio</a>
+
+            <a href="#productos">Productos</a>
+
+            <a href="#categorias">Categorías</a>
+
+            <a href="#nosotros">Sobre Nosotros</a>
+
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+
+
+        <div class="header-icons">
+
+            <button id="searchButton">
+                🔍
+            </button>
+
+            <button id="cartButton">
+                🛒
+                <span id="cartCount">0</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         BUSCADOR
+    ========================== -->
+
+    <div class="search-container" id="searchContainer">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="¿Qué cobija estás buscando?"
+        >
+
+        <button id="closeSearch">
+            ✕
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         INICIO
+    ========================== -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <span class="hero-small">
+                BIENVENIDA A ENTRE NUBES
+            </span>
+
+            <h1>
+                Descansa como<br>
+                <span>si estuvieras entre nubes.</span>
+            </h1>
+
+            <p>
+                Cobijas suaves, cálidas y acogedoras
+                para convertir tus momentos de descanso
+                en una experiencia especial.
+            </p>
+
+            <a href="#productos" class="main-button">
+                Comprar ahora
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         BENEFICIOS
+    ========================== -->
+
+    <section class="benefits">
+
+        <div class="benefit">
+            <span>🚚</span>
+            <div>
+                <h3>Envíos nacionales</h3>
+                <p>Recibe tu pedido donde estés.</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <span>✨</span>
+            <div>
+                <h3>Alta calidad</h3>
+                <p>Productos seleccionados.</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <span>💳</span>
+            <div>
+                <h3>Compra segura</h3>
+                <p>Compra de forma fácil y segura.</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <span>💗</span>
+            <div>
+                <h3>Hecho para ti</h3>
+                <p>Pensado para tu comodidad.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRODUCTOS
+    ========================== -->
+
+    <section class="products-section" id="productos">
+
+        <div class="section-title">
+
+            <span>DESCUBRE</span>
+
+            <h2>
+                Nuestros favoritos
+            </h2>
+
+            <p>
+                Encuentra la cobija perfecta para ti.
+            </p>
+
+        </div>
+
+
+        <!-- FILTROS -->
+
+        <div class="filters">
+
+            <button class="filter active" data-category="todos">
+                Todos
+            </button>
+
+            <button class="filter" data-category="suaves">
+                Suaves
+            </button>
+
+            <button class="filter" data-category="calidas">
+                Cálidas
+            </button>
+
+            <button class="filter" data-category="premium">
+                Premium
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCTOS -->
+
+        <div class="products-grid">
+
+
+            <!-- PRODUCTO 1 -->
+
+            <article
+                class="product"
+                data-category="suaves"
+            >
+
+                <div class="product-image pink">
+                    ☁️
+                </div>
+
+                <div class="product-info">
+
+                    <span class="tag">
+                        MÁS VENDIDA
+                    </span>
+
+                    <h3>
+                        Cobija Sueño Rosa
+                    </h3>
+
+                    <p>
+                        Cobija suave y ligera.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            $120.000
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Cobija Sueño Rosa"
+                            data-price="120000"
+                        >
+                            + 🛒
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 2 -->
+
+            <article
+                class="product"
+                data-category="suaves"
+            >
+
+                <div class="product-image blue">
+                    ☁️
+                </div>
+
+                <div class="product-info">
+
+                    <span class="tag">
+                        FAVORITA
+                    </span>
+
+                    <h3>
+                        Cobija Cielo Azul
+                    </h3>
+
+                    <p>
+                        Suave como una nube.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            $135.000
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Cobija Cielo Azul"
+                            data-price="135000"
+                        >
+                            + 🛒
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 3 -->
+
+            <article
+                class="product"
+                data-category="calidas"
+            >
+
+                <div class="product-image beige">
+                    ☁️
+                </div>
+
+                <div class="product-info">
+
+                    <span class="tag">
+                        NUEVA
+                    </span>
+
+                    <h3>
+                        Cobija Dulce Descanso
+                    </h3>
+
+                    <p>
+                        Ideal para noches frías.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            $150.000
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Cobija Dulce Descanso"
+                            data-price="150000"
+                        >
+                            + 🛒
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 4 -->
+
+            <article
+                class="product"
+                data-category="premium"
+            >
+
+                <div class="product-image purple">
+                    ☁️
+                </div>
+
+                <div class="product-info">
+
+                    <span class="tag">
+                        PREMIUM
+                    </span>
+
+                    <h3>
+                        Cobija Nube Premium
+                    </h3>
+
+                    <p>
+                        Máxima suavidad y confort.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            $180.000
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Cobija Nube Premium"
+                            data-price="180000"
+                        >
+                            + 🛒
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CATEGORÍAS
+    ========================== -->
+
+    <section class="categories" id="categorias">
+
+        <div class="section-title">
+
+            <span>ELIGE TU ESTILO</span>
+
+            <h2>
+                Encuentra tu favorita
+            </h2>
+
+        </div>
+
+
+        <div class="categories-grid">
+
+            <div class="category category-pink">
+
+                <span>🌸</span>
+
+                <h3>
+                    Cobijas suaves
+                </h3>
+
+                <button>
+                    Ver colección
+                </button>
+
+            </div>
+
+
+            <div class="category category-blue">
+
+                <span>☁️</span>
+
+                <h3>
+                    Cobijas ligeras
+                </h3>
+
+                <button>
+                    Ver colección
+                </button>
+
+            </div>
+
+
+            <div class="category category-yellow">
+
+                <span>🌙</span>
+
+                <h3>
+                    Cobijas cálidas
+                </h3>
+
+                <button>
+                    Ver colección
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SOBRE NOSOTROS
+    ========================== -->
+
+    <section class="about" id="nosotros">
+
+        <div class="about-cloud">
+            ☁️
+        </div>
+
+        <div class="about-content">
+
+            <span>
+                SOBRE ENTRE NUBES
+            </span>
+
+            <h2>
+                Queremos que cada noche
+                se sienta especial.
+            </h2>
+
+            <p>
+                En Entre Nubes seleccionamos productos
+                pensando en quienes aman sentirse
+                cómodos, tranquilos y rodeados de
+                suavidad.
+            </p>
+
+            <p>
+                Nuestro objetivo es llevar un pequeño
+                momento de felicidad a tu habitación.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         NEWSLETTER
+    ========================== -->
+
+    <section class="newsletter">
+
+        <h2>
+            Únete a Entre Nubes ☁️
+        </h2>
+
+        <p>
+            Recibe novedades, promociones y nuevos productos.
+        </p>
+
+        <form id="newsletterForm">
+
+            <input
+                type="email"
+                placeholder="Tu correo electrónico"
+                required
+            >
+
+            <button type="submit">
+                Suscribirme
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+
+    <footer id="contacto">
+
+        <div class="footer-logo">
+            ☁️ Entre Nubes
+        </div>
+
+        <p>
+            Cobijas para descansar,
+            soñar y disfrutar.
+        </p>
+
+        <div class="social">
+
+            <a href="#">
+                Instagram
+            </a>
+
+            <a href="#">
+                Facebook
+            </a>
+
+            <a href="#">
+                WhatsApp
+            </a>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 Entre Nubes.
+            Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         CARRITO
+    ========================== -->
+
+    <div class="cart-overlay" id="cartOverlay">
+
+        <div class="cart">
+
+            <div class="cart-header">
+
+                <h2>
+                    🛒 Mi carrito
+                </h2>
+
+                <button id="closeCart">
+                    ✕
+                </button>
+
+            </div>
+
+            <div
+                class="cart-items"
+                id="cartItems"
+            >
+                <p class="empty-cart">
+                    Tu carrito está vacío.
+                </p>
+            </div>
+
+            <div class="cart-footer">
+
+                <div>
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="cartTotal">
+                        $0
+                    </strong>
+
+                </div>
+
+                <button
+                    class="checkout"
+                    id="checkout"
+                >
+                    Finalizar compra
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
